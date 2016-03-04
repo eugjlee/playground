@@ -1,0 +1,16 @@
+# Max2Mtl Version 4.0 Mar 10th, 2001
+#
+newmtl barrier
+Ka  1.0 1.0 1.0
+#Ka  0.5 0.5 0.5
+#Kd  1.0 1.0 1.0
+Kd  1.1 1.1 1.1
+Ks  0.1 0.1 0.1
+d  1.0
+Ns  1.0
+illum 2
+#map_Kd diffuse.jpg
+#
+# Multi/Sub Material__35 done 
+#
+# EOF

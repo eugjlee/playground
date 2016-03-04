@@ -1,0 +1,68 @@
+# Blender MTL File: 'None'
+# Material Count: 6
+newmtl Arms
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.11 0.11 0.69
+	Kd 0.11 0.11 0.69
+	Ks 0.35 0.35 0.35
+
+
+newmtl Chest
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.11 0.11 0.69
+	Kd 0.11 0.11 0.69
+	Ks 0.35 0.35 0.35
+
+
+newmtl Default
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.11 0.11 0.69
+	Kd 0.11 0.11 0.69
+	Ks 0.35 0.35 0.35
+
+
+newmtl Head
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.11 0.11 0.69
+	Kd 0.11 0.11 0.69
+	Ks 0.35 0.35 0.35
+
+
+newmtl Legs
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.11 0.11 0.69
+	Kd 0.11 0.11 0.69
+	Ks 0.35 0.35 0.35
+
+
+newmtl Waist
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.11 0.11 0.69
+	Kd 0.11 0.11 0.69
+	Ks 0.35 0.35 0.35
+
+
