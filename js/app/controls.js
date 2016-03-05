@@ -178,11 +178,11 @@ define([ "three", "camera", "container", "scene" ], function ( THREE, camera, co
 			// camera.position.z = 5;
 			// camera.position.y = 2;
 			// console.log( multiControls._controls.getObject().getWorldPosition() );
-			// var target = multiControls._controls.getObject().getWorldPosition();
-			// target.y -= 2;
+			var position = multiControls._controls.getObject().getWorldPosition();
+			position.y -= 2;
+			camera.position.y = 5;
 			multiControls._controls = new THREE.OrbitControls( camera, multiControls.domElement );
-			// multiControls._controls.target.copy( target );
-
+			multiControls._controls.target.copy( position );
 			// blocker.style.display = '-webkit-box';
 			// blocker.style.display = '-moz-box';
 			// blocker.style.display = 'box';
