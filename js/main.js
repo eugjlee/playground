@@ -8,6 +8,7 @@ require.config({
         'OrbitControls': {deps: ['threeCore'], exports: "THREE"},
         'ColladaLoader': {deps: ['threeCore'], exports: "THREE"},
         'OBJLoader': {deps: ['threeCore'], exports: "THREE"},
+        'PLC': {deps: ['threeCore'], exports: "THREE"},
         // --- end THREE sub-components
         'detector': { exports: 'Detector' },
         'Stats': {exports: "Stats"},
@@ -31,6 +32,7 @@ require.config({
         'detector': "../libs/three/Detector",
         'ColladaLoader': "../libs/three/loaders/ColladaLoader2",
         'OBJLoader': "../libs/three/loaders/OBJLoader",
+        'PLC': "../libs/three/controls/PointerLockControls",
         // --- end THREE sub-components
 
     }

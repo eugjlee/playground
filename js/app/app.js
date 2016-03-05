@@ -39,12 +39,7 @@ define([
 
 		// INITIAL CAMERA POSITION AND TARGET
 		camera.position.set( 0, 0.2, -2 );
-		controls.target.copy( new THREE.Vector3( 0, 0.1, 0 ) );
 
-		// set Reset Values
-		controls.target0 = controls.target.clone();
-		controls.position0 = camera.position.clone();
-		controls.zoom0 = camera.zoom;
 	
 		// GRID FOR ORIENTATION
 		var gridXZ = new THREE.GridHelper( 1, 0.1 );
@@ -74,7 +69,7 @@ define([
 		dg.add( options, "reset" ).name("Reset Camera");
 
 		// DEBUG GUI
-		
+
 		$(loadingScreen).fadeOut();
 		animate();
 	};
@@ -86,11 +81,11 @@ define([
     	delta = clock.getDelta();
 
 		TWEEN.update();
-		controls.update();
+		controls.update( delta );
 		stats.update();
 
-		skycube.update( camera, renderer );
-		renderer.render( scene, camera );
+		skycube.update( controls._camera, renderer );
+		renderer.render( scene, controls._camera );
 
 		requestAnimationFrame( animate );
 

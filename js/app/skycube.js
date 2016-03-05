@@ -120,7 +120,8 @@ define(["three", "camera", "renderer" ], function ( THREE, camera, renderer ){
 	return {
 		mesh: mesh,
 		update: function( camera, renderer ) {
-			cameraCube.quaternion.copy( camera.quaternion );
+			cameraCube.quaternion.copy( camera.getWorldQuaternion() );
+			// cameraCube.quaternion.copy( camera.quaternion );
 			renderer.render( sceneCube, cameraCube );
 		}
 	};
