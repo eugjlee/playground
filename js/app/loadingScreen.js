@@ -10,12 +10,11 @@ define(["jquery","CanvasLoader"], function ($, CanvasLoader) {
 	container.className = "loading-container";
 	document.body.appendChild( container );
 	// var container = $('.loading-container');
-	container = $( container );
 	
-	if (container.length) {
+	if ( $( container ).length ) {
 		
 		var loadingimg = $('<div id="canvasloader-container" class="onepix-imgloader"></div>');
-		container.prepend(loadingimg);
+		$( container ).prepend( loadingimg );
 
 		// $loadingimg.attr("src","images/flexslider/loading.gif");
 

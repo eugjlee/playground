@@ -74,6 +74,7 @@ define([
 		dg.add( options, "reset" ).name("Reset Camera");
 
 		// DEBUG GUI
+		
 		$(loadingScreen).fadeOut();
 		animate();
 	};
