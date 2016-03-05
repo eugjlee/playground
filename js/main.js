@@ -40,7 +40,7 @@ require([
     // Load our app module and pass it to our definition function
     'app',
 	'detector',
-    'loadingScreen'
+    // 'loadingScreen'
 ], function (App,Detector) {
 
 	if ( ! Detector.webgl ) {
@@ -54,7 +54,7 @@ require([
 		
 		// The "app" dependency is passed in as "App"
 		App.initialize();
-		App.animate();
+		// App.animate();
 
 	}
 	

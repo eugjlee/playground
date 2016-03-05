@@ -13,7 +13,6 @@ function Playground() {
 	var scene = new THREE.Scene();
 	this._scene = scene;
 
-
 	// CAMERA
 	var screen_width = window.innerWidth;
 	var screen_height = window.innerHeight;

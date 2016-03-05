@@ -6,7 +6,11 @@ define(["jquery","CanvasLoader"], function ($, CanvasLoader) {
 
     'use strict';
 
-	var container = $('.loading-container');
+	var container = document.createElement( 'div' );
+	container.className = "loading-container";
+	document.body.appendChild( container );
+	// var container = $('.loading-container');
+	container = $( container );
 	
 	if (container.length) {
 		
@@ -27,7 +31,7 @@ define(["jquery","CanvasLoader"], function ($, CanvasLoader) {
 		cl.setFPS(22); // default is 24
 		cl.show(); // Hidden by default
 
-		container.fadeOut();
+		// container.fadeOut();
 		// $('.loading-container').fadeOut();
 	}
 

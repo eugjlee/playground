@@ -1,7 +1,7 @@
 /**
  * Setup the control method
  */
-define(["three","camera","container", "jquery", "renderer"], function (THREE,camera,container, $, renderer) {
+define([ "three", "camera", "container" ], function ( THREE, camera, container ) {
 
     'use strict';
 
@@ -25,10 +25,7 @@ define(["three","camera","container", "jquery", "renderer"], function (THREE,cam
 	// controls.constraint.dollyIn( 1.3 );
 	// controls.enablePan = false;
 	// controls.enableKeys = false;
-	// controls.minDistance	= 200;
-	// controls.maxDistance	= 700;
 	// controls.zoomSpeed	= 0.3;
-	// controls.rotateSpeed = 0.5;
 
 	// smooth Zoom
 	// controls.constraint.smoothZoom = true;

@@ -12,7 +12,10 @@ define([
     "stats",
     "debugGUI",
     "tweenHelper",
-    "skycube"
+    "skycube",
+    "clock"
+    ,"loadingScreen"
+    ,"jquery"
 ], function ( 
              THREE, 
              TWEEN, 
@@ -23,7 +26,10 @@ define([
              stats, 
              debugGUI, 
              tweenHelper, 
-             skycube 
+             skycube,
+             clock
+             ,loadingScreen
+             ,$
              ) {
 	
 	'use strict';
@@ -68,11 +74,15 @@ define([
 		dg.add( options, "reset" ).name("Reset Camera");
 
 		// DEBUG GUI
-
+		$(loadingScreen).fadeOut();
+		animate();
 	};
 
+	var delta = 0;
 	// MAIN LOOP
     var animate = function () {
+
+    	delta = clock.getDelta();
 
 		TWEEN.update();
 		controls.update();
@@ -87,6 +97,6 @@ define([
 
     return {
         initialize: initialize,
-        animate: animate
+        // animate: animate
     }
 });
